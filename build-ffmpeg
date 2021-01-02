@@ -592,7 +592,7 @@ CONFIGURE_OPTIONS+=("--enable-libsrt")
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	if command_exists "nvcc" ; then
 		if build "nv-codec"; then
-			download "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.0.10.0/nv-codec-headers-11.0.10.0.tar.gz"
+			download "https://github.com/FFmpeg/nv-codec-headers/releases/download/n10.0.26.1/nv-codec-headers-10.0.26.1.tar.gz"
 			execute make PREFIX="${WORKSPACE}"
 			execute make install PREFIX="${WORKSPACE}"
 			build_done "nv-codec"
